@@ -33,13 +33,11 @@ int main(){
         }
     }
     result = abs(result);
-
     if(result < 2){
         cout << "0";
         return 0;
     }
     bool prime = true;
-
     for(int i = 2; i * i <= result; ++i){
         if(result % i == 0){
             prime = false;
